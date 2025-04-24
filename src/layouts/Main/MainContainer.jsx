@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import ProductCard from "./ProductCard";
-import SearchInput from "./SearchInput";
+import {ProductCard} from "../../components/ProductCard/ProductCard";
+import {SearchInput} from "../../components/SearchInput/SearchInput";
 
-export default function MainContainer() {
+export function MainContainer() {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
 
